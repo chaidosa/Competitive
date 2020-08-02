@@ -1,0 +1,39 @@
+// https://practice.geeksforgeeks.org/problems/print-pattern/0
+
+#include <iostream>
+using namespace std;
+void printpattern(int n){
+    
+    if(!(n>0))
+    {
+        cout<<n<<" ";
+        return;
+    }
+    
+    cout<<n<<" ";
+    n-=5;
+    
+    printpattern(n);
+    n+=5;
+    cout<<n<<" ";
+    
+    
+    
+}
+void solve(){
+    int n;
+    cin>>n;
+    int key=0;
+    printpattern(n);
+    cout<<endl;
+}
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    solve();
+	}
+	
+	return 0;
+}
+
